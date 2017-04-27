@@ -1,0 +1,17 @@
+.token-information-block{
+    width: 200px;
+    height: 200px;
+    border: 1px solid;
+    border-radius: 5px;
+    text-align: center;
+}
+.token-information-block h5{
+    color:red;
+}
+h4{
+    text-align: center;
+}
+#content{
+    width: 500px;
+    margin: auto;
+}

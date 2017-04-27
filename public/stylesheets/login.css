@@ -1,0 +1,53 @@
+body{
+    background-color: #3c4432 !important;
+}
+#auth-popup{
+    position: absolute;
+    top:10%;
+    margin: auto;
+    color:darkred;
+    left:40%;
+
+}
+#container{
+    background-color: #699326 !important;
+    height: 100%;
+    width: 75%;
+    margin: auto;
+}
+#form-container{
+    width: 200px;
+    margin: auto;
+    background-color: white;
+    position: relative;
+    top:20%;
+    text-align: center;
+}
+#username, #password{
+    border: none;
+    margin-bottom: 10px;
+    background-color: white!important;
+}
+img{
+    width: 100px;
+    height:125px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+#form-container p{
+    font-size: 20px;
+    color: #3c4432;
+}
+#form-container input[type='button']{
+    margin-bottom: 15px;
+    background-color: white;
+    border: none;
+    box-shadow: none;
+    width: 80%;
+    height: 25px;
+    background-color:#699326;  ;
+}
+hr{
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+}

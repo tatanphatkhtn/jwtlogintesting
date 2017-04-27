@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="/stylesheets/admin.css">
+        <title>Admin</title>
+    </head>
+    <body>
+        <h4>Welcome to Admin page</h4>
+        <div id ='content'>
+            <div style="float:left" class="token-information-block">
+                <h5>Access token from Server-Side</h5>
+                <p><b>Username:</b> <%=username%></p>
+                <p><b>Role: </b> <%=role%></p>
+            </div>
+            <div style="float:right" class="token-information-block">
+                <h5>Access token from Client-Side</h5>
+                <p id="username"></p>
+                <p id ='role'></p>
+            </div>
+        </div>
+    </body>
+    <script src = 'jquery/dist/jquery.min.js'></script>
+    <script src=  '/jwt-decode/build/jwt-decode.min.js'></script>
+<script>
+   $(document).ready(function () {
+       var decodedToken =jwt_decode(localStorage.accessToken);
+       var username = decodedToken.username;
+       var role = decodedToken.role;
+       $('#username').html('<b>Username: </b>'+ username);
+       $('#role').html('<b>Role: </b>' + role);
+   });
+</script>
+</html>

@@ -1,0 +1,28 @@
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="/stylesheets/login.css">
+    <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap-theme.min.css">
+</head>
+<body>
+<div id="container">
+        <div id = 'auth-popup'></div>
+    <div id = 'form-container'>
+        <img src="/images/logo.jpg">
+        <p>decoflora</p>
+        <form id ='login-form'>
+            <span class="fontawesome-user"></span>
+            <input type="text" id="username" placeholder="Username" required>
+            <hr width="80%">
+            <span class="fontawesome-lock"></span>
+            <input type="password" id = "password" placeholder="Password" required>
+            <input type="button" onclick = 'login()' value="Login">
+        </form>
+    </div>
+</div>
+<script src="/jquery/dist/jquery.min.js"></script>
+<script src = '/bootstrap/dist/js/bootstrap.min.js'></script>
+<script src = '/javascripts/login.js'></script>
+</body>
